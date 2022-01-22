@@ -1,0 +1,103 @@
+@font-face {
+    font-family: TT Commons;
+    src: url("./fonts/TT\ Commons\ Regular.otf") format("opentype");
+  }
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: TT Commons;
+    background-color: #181818;
+  }
+  .ats_Container {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    color: white;
+   /* border: 5px solid red; */
+   width: 60%;
+   margin-left:auto;
+   margin-right: auto;
+   
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .ats_Container:hover{
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .at_benifits {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    
+  }
+  .at_subs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .at_subcount{
+      display: flex;
+      justify-content: space-evenly;
+      cursor: pointer;
+      position: relative;
+  }
+  .at_down, .at_up{
+      font-size: 2rem;
+      position: absolute;
+  background:#222222;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  }
+  .at_down{
+      top: 2rem;
+      left: -1%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .at_up{
+      top: 2rem;
+      right: -1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .at_number{
+      font-size: 4rem;
+  }
+  .at_sub_para{
+      display: flex;
+      justify-content: center;
+  }
+  #at_checkout{
+  margin-top: 2rem;
+  width: 16rem;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, #f05a28, #ec008c, #f05a28);
+  transition: 0.6s ease-in-out;
+  background-size: 300% 100%;
+  }
+  #at_ul li{
+  padding: 0.5rem;
+  
+  }
+  #at_ul{
+      margin-top: 2rem;
+  }
+  #at_subs_head{
+      text-align: center;
+      line-height: 2.5rem;
+  }
+  #at_checkout:hover{
+      background-image: linear-gradient(to right, #f05a28, #ec008c, #f05a28);
+  cursor: pointer;
+  background-position: -50% 0;
+  }

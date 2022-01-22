@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="subStyles.css">
+    <script src="https://kit.fontawesome.com/c57532efe0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="ats_Container">
+        <div class="at_benifits">
+            <h1>With your Pluralsight plan, you can:</h1>
+            <ul id="at_ul">
+                <li>Access thousands of videos to develop critical skills</li>
+                <li>Practice and apply skills with interactive courses and projects</li>
+                <li>See skills, usage, and trend data for your teams</li>
+                <li>Prepare for certifications with industry-leading practice exams</li>
+                <li>Measure proficiency across skills and roles</li>
+                <li>Align learning to your goals with paths and channels</li>
+            </ul>
+
+        </div>
+        <div class="at_subs">
+            <h1 id="at_subs_head">Ready to skill <br> up  your entire team</h1>
+            <div class="at_subcount">
+                <div class="at_down"><i class="fas fa-chevron-down"></i></div>
+                <div class="at_number">
+                    1
+                </div>
+                <div class="at_up"><i class="fas fa-chevron-up"></i>
+                
+                </div>
+               
+            </div>
+            <p class="at_sub_para">subscriptions</p>
+            <button id="at_checkout">Continue to checkout</button>
+        </div>
+      
+    </div>
+</body>
+</html>
+<script>
+    const down = document.querySelector(".at_down")
+    const up = document.querySelector(".at_up")
+    const number = document.querySelector(".at_number")
+    const btn = document.getElementById("at_checkout")
+    let count = 1
+    down.addEventListener("click", ()=>{
+            if(count == 1){
+                number.innerText = count
+            }else{
+                count--
+            number.innerText = count
+            }
+    })
+    up.addEventListener("click", ()=>{
+       count++
+        number.innerText = count
+    })
+
+    btn.addEventListener("click", ()=>{
+        localStorage.setItem("count",JSON.stringify(count))
+        window.location.href = "/order"
+    })
+
+
+</script>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <!-- <title>Document Nav-Footer</title> -->
+  <link rel="stylesheet" href="finalhome.css" />
+  <link rel="stylesheet" href="GpNavFooter.css" />
+  <script
+    src="https://kit.fontawesome.com/683b4b40e3.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Pluralsight subscription</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body{
+        background-color: #181818;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+    }
+    .nc-tggle{
+      margin: auto;
+      border: solid 1px black;
+      width: 98%;
+      height: 640px;
+      position: absolute;
+    }
+    .form-box{
+      width: 980px;
+      height:600px;
+      position: relative;
+      margin: auto;
+      background:	#181818;
+      padding: 5px;
+      overflow: hidden;
+  }
+  
+  .button-box{
+      width: 280px;
+    height: 40px;
+      margin: 35px auto;
+      position: relative;
+      /* box-shadow: 0 0 20px 9px #1d1c1c1f; */
+      border-radius: 30px;
+    /* background-color: black; */
+  }
+  .toggle-btn{
+      padding: 10px 30px;
+         cursor: pointer;
+         background: transparent;
+         border: 0;
+         outline: none;
+         position: relative;
+       font-size: 18px;
+       color: white;
+  } 
+      
+  #btn{
+    top:0;
+    left:0;
+    position: absolute;
+      width: 150px;
+      height: 100%;
+      background: linear-gradient(to right, #2d2d2d,#2d2d2d);
+      border: solid 1px white;
+      border-radius:30px;
+      transition:.5s;
+  }	
+  #nc-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2d2d2d;
+  }
+  #standard{
+    border: solid 1px black;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+  }
+  #premium{
+    border: solid 1px black;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+  }
+  .input-group{
+        top: 18%;
+        position: absolute;
+        width: 980px;
+        transition: .5s;
+  }
+  #login{
+      left: 0px;
+  }
+  #registor{
+      left: 1090px;
+  }
+  .nc-text{
+    font-size: 20px;
+  }
+  .nc_und{
+    font-size: 18px;
+  }
+  #nc-tgglebtn{
+    width: 250px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to left, #ee2464,#f0582b);
+  }
+  #libraries{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+#left-lib{
+  border:  1px black;
+  width: 450px;
+  height: 300px;
+  text-align: left;
+  margin-left: 150px;
+}
+#right-lib{
+  border:  1px black;
+  width: 450px;
+  height: 300px;
+  text-align: left;
+  margin-right: 150px;
+}
+td,tr{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+i {
+  color: yellow;
+}
+#nc-inner{
+  text-align: center;
+}
+.nc-big{
+  border:  1px black;
+  width: 98%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+table{
+    margin-top: 20px;
+}
+#nc-table{
+    margin-left: 50px;
+    background-color: #18181a;
+}
+#nc-jkl{
+    border:  1px black;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#nc-jkl > img{
+    width: 100%;
+    height: 100%;
+}
+.nc-centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nc-centered > button{
+    background : linear-gradient(to left, #ee2464,#f0582b);
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+}
+#nc-fav{
+    background-color: #212121;
+}
+</style>
+<body>
+  <div class="fixed-top"><div id="gHeader"></div></div>
+
+  
+    <div id="nc-mainbox">
+        <div class="hero">
+            <p style="margin: auto; text-align: center; font-size: 38px; font-weight: bold;">Plans & pricing</p>
+            <div class="form-box">
+             <div class="button-box">
+             <div id="btn"> </div>
+                <button type="button" class="toggle-btn" onclick="login()" >INDIVIDUAL</button>
+              <button type="button" class="toggle-btn" onclick="registor()">TEAM</button>
+           </div>	 
+          <div id="login" class="input-group">
+            <div id="nc-container">
+              <div id="standard">
+                <h1 style="font-size: 1000;">Standard</h1>
+                <h1>₹ 12,299</h1>
+                <p class="nc_und">per year</p>
+                <p class="nc-text">Core course library,paths and skill assessments.</p>
+                <button id="nc-tgglebtn">START WITH STANDARD</button>
+                <p>or start a <a href="" style="color: #d90c7b; font-weight: bold; text-decoration: none;">FREE trial</a></p>
+              </div>
+              <div id="premium">
+                <h1>Premium</h1>
+                <h1>₹ 18,399</h1>
+                <p class="nc_und">per year</p>
+                <p class="nc-text">Entire library of core and expanded courses, exams, projects and interactive courses.</p>
+                <button id="nc-tgglebtn">START WITH PREMIUM</button>
+                <p>or start a <a href="" style="color: #d90c7b; font-weight: bold; text-decoration: none;">FREE trial</a></p>
+              </div>
+            </div>
+          </div>
+           <div id="registor" class="input-group">
+            <div id="nc-container">
+              <div id="standard">
+                <h1>Starter</h1>
+                <h1>US$ 399</h1>
+                <p class="nc_und">per user / year</p>
+                <p class="nc-text">Upskill your team with our core library.</p>
+               <a href="/subscribe"> <button id="nc-tgglebtn">GET STARTED</button> </a>
+              </div>
+              <div id="premium">
+                <h1>Professional</h1>
+                <h1>US$ 579</h1>
+                <p class="nc_und">per user / year</p>
+                <p class="nc-text">Basic reporting and user analytics for teams.</p>
+                <button id="nc-tgglebtn">GET STARTED</button>
+                <p>or start a <a href="" style="color: #d90c7b; font-weight: bold; text-decoration: none;">TEAM trial</a></p>
+              </div>
+              <div id="standard">
+                <h1>Enterprise</h1>
+                <h1>US$ 779</h1>
+                <p class="nc_und">per user / year</p>
+                <p class="nc-text">Flexibility and advanced analytics for the enterprise.</p>
+                <button id="nc-tgglebtn">GET STARTED</button>
+                <p>or start a <a href="" style="color: #d90c7b; font-weight: bold; text-decoration: none;">pilot</a></p>
+              </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <h2 style="text-align: center; margin-top: 20px; font-size: 30px;">Compare our course libraries</h2>
+    <div id="libraries">
+      
+      <div id="left-lib">
+        <h2 style="font-size: 25px;">Core library</h2>
+        <h4 style="text-align: justify; font-size: 20px;">Our core library features 2,500+ of our most-popular courses on in-demand topics like cloud, data, security, software development, infrastructure and more.</h4>
+      </div>
+      <div id="right-lib">
+        <h2 style="font-size: 25px;">Expanded library</h2>
+        <h4 style="text-align: justify; font-size: 20px;">Our expanded library gives you access to our full 7,000+ course library. It includes more advanced topics if you need to build deep expertise and niche topics for those tackling special projects.</h4>
+      </div>
+    </div>
+  </div>
+  <div id="nc-table">
+    <table>
+        <tr>
+          <td style="color: blue;">CORE</td>
+          <td>Standard</td>
+          <td>Premium</td>
+          <td>Starter</td>
+          <td>Professional</td>
+          <td>Enterprise</td>
+        </tr>
+        <tr id="nc-fav">
+          <td>Free trial</td>
+          <td>For 10 days</td>
+          <td>For 10 days</td>
+          <td>n/a</td>
+          <td>For 14 days</td>
+          <td>For 14 days</td>
+        </tr>
+        <tr>
+          <td>Course library</td>
+          <td>Core library</td>
+          <td>Expanded library</td>
+          <td>Core library</td>
+          <td>Expanded library</td>
+          <td>Expanded library</td>
+        </tr>
+        <tr id="nc-fav">
+          <td>Paths</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Channels</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr id="nc-fav">
+          <td>Course discussions</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Mobile and TV apps</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr id="nc-fav">
+          <td>Offline viewing</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Conferences</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+      </table>
+      <h4 style="color: blue;">ASSESSMENTS</h4>
+      <table>
+        <tr id="nc-fav">
+          <td>Skill IQ</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Role IQ</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr id="nc-fav">
+          <td>Course learning checks</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+      </table>
+      <h3 style="color: blue;">PREMIUM</h3>
+      <table>
+        <tr>
+          <td>Certification practice exams</td>
+          <td><i class="fas fa-check"></i></td>
+          <td></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr id="nc-fav">
+          <td>Interactive courses</td>
+          <td><i class="fas fa-check"></i></td>
+          <td></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Projects</td>
+          <td><i class="fas fa-check"></i></td>
+          <td></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+      </table>
+  </div>
+  <div id="nc-jkl">
+      <img src="https://image.freepik.com/free-vector/background-pixel-rain-abstract_23-2148359583.jpg" alt=""/>
+      <div class="nc-centered">
+          <h1 style="font-size: 39px;">Gift Pluralsight Skills</h1>
+          <p style="font-size: 22px; color: gray;">The gift that keeps on giving (all career long).</p>
+          <button>GIFT NOW</button>
+      </div>
+  </div>
+</div>
+<div class=""><div id="gFooter"></div></div>
+</body>
+</html>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("registor");
+    var z = document.getElementById("btn");
+   
+    function registor(){
+    x.style.left = "-1040px";
+    y.style.left = "0px";
+    z.style.left = "130px";
+    }
+    
+    function login(){
+    x.style.left = "0px";
+    y.style.left = "1090px";
+    z.style.left = "0px";
+    }
+   </script>
+    <script type="module">
+      import header from "/gHeader.js";
+      import footer from "/gFooter.js";
+      // import matter from "./Components/gMatter.js";
+  
+      document.getElementById("gHeader").innerHTML = header();
+      document.getElementById("gFooter").innerHTML = footer();
+      // document.getElementById("gMatter").innerHTML = matter();
+  
+      /* header Scriping */
+    </script>

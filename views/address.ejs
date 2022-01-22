@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+    <div class="nkcontainer">
+        <h2 id="nkhead">Add Address</h2>
+        
+        <input id="addIns" class="fname" type="text" placeholder="First Name">
+        <input id="addIns" class="Lname" type="text" placeholder="Last Name">
+        <input id="addIns" class="Lname" type="number" placeholder="Mobile Number">
+        <input id="addIns" class="fname" type="text" placeholder="Email">
+
+        <input id="addIns" class="address" type="text" placeholder="Address">
+        <input id="addIns" class="fname" type="text" placeholder="Landmark">
+        <input id="addIns" class="fname" type="text" placeholder="City">
+        <input id="addIns" class="Lname" type="text" placeholder="State">
+        <input id="addIns" class="fname" type="text" placeholder="Enter Pincode">
+        <button id="addIns" id="home" class="sing">Home</button>
+        <button id="addIns" class="sing">office</button>
+        <button id="addIns" class="sing">other</button>
+        <br>
+        <input class="check" type="checkbox"/><span>Make this my default address</span>
+        <br>
+        <button class="btncancel">Cancel</button>
+        <button class="btnaddress">Continue</button>
+    </div>
+
+    
+</body>
+</html>
+<script>
+    document.querySelector(".btnaddress").addEventListener("click", function () {
+    alert("Address Added Successfully")
+    window.location.href="/payment"
+})
+
+
+document.querySelector(".btncancel").addEventListener("click", function () {
+    window.location.href = "";
+})
+</script>

@@ -1,0 +1,86 @@
+@font-face {
+  font-family: TT Commons;
+  src: url("./fonts/TT\ Commons\ Regular.otf") format("opentype");
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: TT Commons;
+  background-color: #181818;
+  color: white;
+}
+.at_summary {
+  margin-top: 2rem;
+  display: flex;
+  gap: 5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.at_order_summary {
+  display: grid;
+  place-items: center;
+  width: 45%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.at_order_summary:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#at_first {
+  padding-top: 2rem;
+}
+.at_subtotal {
+  width: 28rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.total_due {
+  width: 28rem;
+  display: flex;
+  gap: 14.8rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.plan-p {
+  margin: 1rem 0;
+}
+.at_num {
+  font-size: 1.25rem;
+}
+#plan_title {
+  font-size: 1.25rem;
+}
+.at_plan_price {
+  font-size: 1.25rem;
+}
+.btn_cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 6px 16px;
+  border: 0px;
+  border-radius: 2px;
+  height: 40px;
+  background: rgb(0, 132, 189);
+  transition: all 300ms ease 0s;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  color: white;
+}
+.btn_cont:hover {
+  background-color: #0074ab;
+}

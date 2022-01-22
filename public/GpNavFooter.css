@@ -1,0 +1,204 @@
+@font-face {
+    font-family: TT Commons;
+    src: url("./fonts/TT Commons Regular.otf") format("opentype");
+}
+
+body {
+    /* background-color: lawngreen; */
+    height: 1500px;
+    font-family: TT Commons;
+}
+
+/* haeder css */
+.navImg {
+    width: 250px;
+    height: 50px;
+    margin-left: 70px;
+}
+
+.btn2:hover {
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.nB {
+    padding-right: 70px;
+}
+
+.b1 {
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+.b1:hover {
+    color: black;
+}
+
+h5>img {
+    margin-right: 10px;
+}
+
+.sBox {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 550px;
+    height: 150px;
+    color: white;
+    padding: 10px;
+    /* border: 2px solid greenyellow; */
+    margin: 0.5%;
+}
+
+.sBox>div {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.snImg {
+    height: 45%;
+    width: 100%;
+}
+
+.gBox {
+    width: 250px;
+    /* border: 2px solid red; */
+    background-color: black;
+    color: white;
+}
+
+.card {
+    background-color: black;
+}
+
+.skillImg {
+    width: 80%;
+    margin: 2px;
+}
+
+.gCont {
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    /* border: 2px solid blue; */
+    width: fit-content;
+    background-color: black;
+}
+
+.gNavBar {
+    /* border: 3px solid blue; */
+    justify-content: space-between;
+    background-color: rgb(33, 33, 33);
+}
+
+.nav-item {
+    /* border: 3px solid rgb(238, 11, 60); */
+    /* margin: 5px; */
+    height: 50px;
+}
+
+.gNavLeftElement {
+    /* border: 2px solid gold; */
+    width: 65%;
+}
+
+.gNavRightElement {
+    display: flex;
+    /* border: 2px solid gold; */
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.leftElement {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+}
+
+#gPlatformshow {
+    margin-top: -12px;
+    margin-left: 350px;
+}
+
+#gProducts {
+    margin-top: -1px;
+    margin-left: 450px;
+    cursor: pointer;
+    display: none;
+}
+
+#gResource {
+    margin-top: -3px;
+    margin-left: 550px;
+    display: none;
+}
+
+#gSignIn {
+    margin-top: -1px;
+    margin-left: 900px;
+    display: none;
+}
+
+#dropMenu {
+    float: initial;
+}
+
+.card-body>h5,
+h6 :hover {
+    cursor: pointer;
+}
+
+/* footer css */
+#img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+a,
+.nav-link {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover,
+.nav-link:hover {
+    color: white;
+}
+
+.fa {
+    padding: 11px;
+    font-size: 15px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: whitesmoke;
+}
+
+hr {
+    height: 15px;
+    width: 100%;
+    color: gray;
+}
+
+.t2 {
+    color: gray;
+    font-size: small;
+}
+
+.t1>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: small;
+    margin: 5px;
+}
+
+#gFooter {
+    /* height: 530px; */
+    line-height: 2rem;
+}

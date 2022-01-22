@@ -1,0 +1,301 @@
+@font-face {
+    font-family: TT Commons;
+    src: url("./fonts/TT Commons Regular.otf") format("opentype");
+}
+
+
+body {
+    background: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    font-family: TT Commons;
+}
+
+#abhome {
+    display: flex;
+    margin-top: 80px;
+}
+
+.abp {
+    margin: 0 20px;
+
+}
+
+.abp:hover {
+    border-bottom: 2px solid white;
+}
+
+#abnext {
+    margin-top: 5%;
+    display: flex;
+
+}
+
+#ableft {
+    width: 60%;
+    line-height: 1px;
+}
+
+#abs {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.abpadd {
+
+    border-radius: 8px;
+    background-color: #222222;
+    margin: 0 20px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+#abtex {
+    line-height: 25px;
+}
+
+#abdown {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #222222;
+}
+
+#abright {
+    margin-left: 100px;
+
+}
+
+#ablearn {
+    width: 90%;
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+#abhn {
+    display: flex;
+}
+
+.abhne {
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 17px;
+    margin-left: 30px;
+    background-color: #222222;
+}
+
+#abafr {
+    margin-top: 10%;
+    background-image: url('https://www.pluralsight.com/content/pluralsight/en/product/skill-iq/jcr:content/image-res/file.transform/share-image/image.img.591605e5-9425-4e14-8903-63983bd8809b.jpg');
+    background-size: 500px 500px;
+    background-color: black;
+    border-radius: 10px;
+
+    padding: 50px;
+
+
+}
+
+#abiq {
+    height: 50px;
+    width: 100px;
+}
+
+#abss {
+    border: 2px sold white;
+    background-color: #222222;
+    padding: 20px;
+    color: white;
+}
+
+#abrev {
+    background-color: #222222;
+}
+
+.abreimg {
+    border: 2px solid black;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+
+}
+
+#abmainrev {
+    padding: 30px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+
+#ablast {
+    margin-top: 50px;
+    display: flex;
+    padding: 50px;
+}
+
+#abbtn {
+    border: 1px solid black;
+    height: 60px;
+    width: 180px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    background: linear-gradient(45deg, #ef552d, #ed2166);
+
+}
+
+#abbtn1 {
+    border: 1px solid black;
+    border: 1px solid black;
+    margin-left: 80px;
+    margin-top: 30px;
+    height: 60px;
+    width: 180px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    background: linear-gradient(45deg, #ef552d, #ed2166);
+
+}
+
+.checked {
+    color: orange;
+}
+
+    /* .yellow{
+        color:red;
+    } */
+.abreview {
+    display: flex;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: TT Commons;
+}
+
+#absi {
+    display: flex;
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/login/bg-gtm-2020.png");
+    background-color: black;
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#absileft {
+
+    width: 35%;
+    padding: 70px;
+    background: #0d0f12;
+}
+
+#absiright {
+    padding: 250px;
+}
+
+.absiu {
+    color: white;
+    height: 40px;
+    width: 350px;
+    background: #0d0f12;
+    border: 1px solid white;
+}
+
+#absip {
+    height: 40px;
+    width: 350px;
+    background: #0d0f12;
+    border: 1px solid white;
+}
+
+#absubtns {
+    margin-top: 50px;
+    height: 50px;
+    width: 360px;
+    background: #0074ab;
+    border: 1px solid #0074ab;
+    color: white;
+    font-size: 18px;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: TT Commons;
+}
+
+#absi {
+    display: flex;
+    background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/login/bg-gtm-2020.png");
+    background-color: black;
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#absileft {
+
+    width: 35%;
+    padding: 70px;
+    background: #0d0f12;
+}
+
+#absiright {
+    padding: 250px;
+}
+
+#absiu {
+    height: 40px;
+    width: 350px;
+    background: #0d0f12;
+    border: 1px solid white;
+    color: white;
+}
+
+#absip {
+    height: 40px;
+    width: 350px;
+    background: #0d0f12;
+    border: 1px solid white;
+    color: white;
+}
+
+#absibtns {
+    margin-top: 50px;
+    height: 50px;
+    width: 360px;
+    background: #0074ab;
+    border: 1px solid #0074ab;
+    color: white;
+    font-size: 18px;
+}
+
+#absibtnc {
+    height: 50px;
+    width: 360px;
+    background: #2d3137;
+    font-size: 18px;
+    border: 1px solid #2d3137;
+    color: white;
+}
+
+#absiappend {
+    font-size: 30px;
+    font-weight: bolder;
+    color: pink;
+}

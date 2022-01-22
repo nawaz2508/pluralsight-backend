@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluralsight User Payment Details</title>
+
+    <link rel="stylesheet" href="payment.css">
+  
+</head>
+<body>
+  <a href="/Home"><h2>Back to home</h2></a>
+
+    <div id="paycontainer">
+          <label class="fo" for="">Name</label>
+          <input class="name" type="text" placeholder="Enter account holder name">
+          <label class="fo">Card No</label>
+          <input class="card" type="number" placeholder="XXXX-XXXX-XXXX-XXXX">
+          <label class="fo">Cvv</label>
+          <input class="cvv" type="number" placeholder="Enter your CVV">
+          <label class="fo">Expiery</label>
+          <input class="expiery" type="number" placeholder="MM/YYYY">
+          <label class="fo">Phone</label>
+          <input class="phone" type="number" placeholder="0000000000">
+          <button id="pay">Pay</button>
+    </div>
+ <script>
+   document.getElementById("pay").addEventListener("click",check)
+
+   function check(){
+
+
+     window.location.href="/confirm"
+   
+  }
+ </script>
+</body>
+</html>

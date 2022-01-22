@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="atOrder.css">
+</head>
+<body>
+    <div class="at_order_summary">
+        <h1 id="at_first">Order Summary</h1>
+        <div class="at_summary">
+            <div class="plan">
+                <p class="plan-p" id="plan_title">plan</p>
+                <h2>Business Starter</h2>
+            </div>
+            <div class="at_num">
+                <p class="plan-p">subscriptions</p>
+                <p id="at-total"></p>
+            </div>
+            <div class="at_plan_price">
+                <p class="plan-p">price</p>
+                <p>$399</p>
+            </div>
+        </div>
+        <div class="at_subtotal">
+            <div class="at-price">
+                <h3 class="plan-p">subtotal</h3>
+                <h3>Estimated Tax</h3>
+            </div>
+            <div class="at-dollar">
+                <h3 class="plan-p" id="dollar_total"></h3>
+                <h3>$0</h3>
+            </div>
+
+        </div>
+
+        <div class="total_due">
+            <div class="at_total_due">
+                <h2>Total due today</h2>
+            </div>
+            <div class="at_final">
+                <h2 id="final-price"></h2>
+            </div>
+        </div>
+        <button class="btn_cont"><a href="/address">continue</a></button>
+    </div>
+  
+</body>
+</html>
+
+<script>
+    const order = JSON.parse(localStorage.getItem("count"))
+    let total = document.getElementById("at-total")
+    total.innerText = order
+    let final = document.getElementById("final-price")
+    let dollarFinal = document.getElementById("dollar_total")
+    dollarFinal.innerText = `$ ${order * 399}`
+    final.innerText = `$ ${order * 399}`
+</script>
