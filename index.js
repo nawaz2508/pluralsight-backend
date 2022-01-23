@@ -31,6 +31,14 @@ app.get("/payment", (req,res) => {
 app.get("/confirm", (req,res) => {
     res.render("confirm")
 })
+app.get("/signin", (req,res) => {
+    res.render("signin")
+})
+
+app.get("/signup", (req,res) => {
+    res.render("signup")
+})
+
 app.listen(5000, async() =>{
     await connect()
     console.log("server running at port 5000")
