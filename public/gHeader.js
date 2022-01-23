@@ -331,7 +331,7 @@ function gHeader(){
       <div id="gSignIn" class="sBox gSignIn">
         <div >
           <p>SIGN IN WITH</p>
-          <a href="signin.html">
+          <a href="/signin">
           <img
             src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Skill_logo_white.png"
             alt="skill"
